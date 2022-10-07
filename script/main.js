@@ -19,14 +19,14 @@ function nameCity(evt) {
         cityId = search.value;
         cityName(cityId);
         console.log(cityId);
-        search.value = ""
+        search.value = "";
     }
 }
 
 function cityName(e) {
     let url = "https://api.openweathermap.org/data/2.5/weather?q=" + `${cityId}` + "&appid=bf35cac91880cb98375230fb443a116f"
     console.log(url)
-     fetch(url)
+    fetch(url)
         .then(response => response.json())
         .then(json => {
             console.log(json)
@@ -42,45 +42,35 @@ function cityName(e) {
 
             console.log(meteorSituation);
 
-            if (meteorSituation == `Clear`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+            if (meteorSituation === "Clear") {
+                myVideo.load();
                 backgroundVideo.src = `video/clear.mp4`;
                 backgoundImg.src = `img/Clear.png`;
             }
-            if (meteorSituation == `Clouds`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+
+
+            if (meteorSituation === "Clouds") {
+                myVideo.load();
                 backgroundVideo.src = `video/clouds.mp4`;
                 backgoundImg.src = `img/Clouds.png`;
             }
             if (meteorSituation == `Snow`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+                myVideo.load();
                 backgroundVideo.src = `video/snow.mp4`;
                 backgoundImg.src = `img/Snow.png`;
             }
             if (meteorSituation == `Thunderstorm`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+                myVideo.load();
                 backgroundVideo.src = `video/tunderstorm.mp4`;
                 backgoundImg.src = `img/Thunderstorm.png`;
             }
             if (meteorSituation == `Drizzle`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+                myVideo.load();
                 backgroundVideo.src = `video/drizzle.mp4`;
                 backgoundImg.src = `img/Drizzle.png`;
             }
             if (meteorSituation == `Rain`) {
-                let v = document.createElement("source");
-                v.type = "video/mp4";
-                myVideo.append(v);
+                myVideo.load();
                 backgroundVideo.src = `video/rain.mp4`;
                 backgoundImg.src = `img/rain.png`;
             }
@@ -88,3 +78,4 @@ function cityName(e) {
         });
 };
 cityName();
+
