@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source type="video/mp4" class="videoWeather">
+    </video>
+
+    <main class="container">
+
+        <div class="head">
+            <div class="header_time">
+                <div class="city_coun">
+                    <div id="city"></div>
+                    <div id="coun"></div>
+                    <input type="text" name="search" class="searchCity" placeholder="Your_city">
+                </div>
+                <div class="divDay">
+                    <p class="day"></p>
+                    <p class="data"></p>
+                    <p class="mount"></p>
+                    <p class="year"></p>
+                </div>
+
+                <div class="time">
+                    <p class="hr"></p>
+                    <p class="min"></p>
+                    <p class="sec"></p>
+                </div>
+
+            </div>
+            <div class="icon">
+                <img alt="rain" class="imgWeather">
+            </div>
+        </div>
+        <div class="weather">
+            <div class="left_weather">
+                <div id="temp"></div>
+                <div id="like"></div>
+            </div>
+            <div class="right_weather">
+                <div id="speed"></div>
+                <div id="pressure"></div>
+                <div id="humidity"></div>
+                <div id="visibility"></div>
+                <!-- <div id="situation"></div> -->
+            </div>
+        </div>
+        <div class="weatherDays">
+            <div class="nextDay">
+                <p class="day1"></p>
+                <div class="icon1">
+                    <img alt="rain" class="imgWeather1">
+                </div>
+                <div id="temp1"></div>
+            </div>
+            <div class="nextDay2">
+                <p class="day2"></p>
+                <div class="icon2">
+                    <img alt="rain" class="imgWeather2">
+                </div>
+                <div id="temp2"></div>
+            </div>
+            <div class="nextDay3">
+                <p class="day3"></p>
+                <div class="icon3">
+                    <img alt="rain" class="imgWeather3">
+                </div>
+                <div id="temp3"></div>
+            </div>
+        </div>
+    </main>
+
+   <script src="script/main.js"></script>
+    <script src="script/time.js"></script>
+</body>
+
+</html>
