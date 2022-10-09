@@ -96,7 +96,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 30%;
+    height: 23%;
 }
 
 .icon {
@@ -196,14 +196,22 @@ input {
     .right_weather {
         font-size: 1.6vw;
     }
-
     #like {
         font-size: 1.5vw;
+    }
+    .day1, .day2, .day3{
+        font-size: 4vw;
+    }
+    .icon1, .icon2, .icon3{
+        width: 13vw;
+    }
+    #temp1, #temp2, #temp3{
+        font-size: 4vw;
     }
 }
 
 .weatherDays {
-    height: 33%;
+    height: 40%;
     width: 100%;
     display: flex;
     margin-top: 1%;
@@ -221,4 +229,50 @@ input {
 .nextDay2 {
     border-left: 1px solid white;
     border-right: 1px solid white;
+}
+
+.day1, .day2, .day3{
+    font-size: 23px;
+    color: white;
+    margin: 1%;
+}
+
+.icon1, .icon2, .icon3{
+    width: 45%;
+}
+
+.imgWeather1, .imgWeather2, .imgWeather3 {
+    width: 100%;
+}
+
+
+.about__animate {
+    animation: shakeX 1s;
+    animation-iteration-count: 5;
+    animation-iteration-count: calc(var(--animate-repeat)*10)
+}
+
+.about__animate:hover {
+    animation-play-state: paused;
+}
+
+.about__animate_1 {
+    animation-delay: 15s;
+    animation-delay: calc(var(--animate-delay)*15)
+}
+
+.about__animate_2 {
+    animation-delay: 25s;
+    animation-delay: calc(var(--animate-delay)*25)
+}
+
+.about__animate_3 {
+    animation-delay: 35s;
+    animation-delay: calc(var(--animate-delay)*35)
+}
+
+
+#temp1, #temp2, #temp3{
+    color: white;
+    font-size: 21px;
 }
