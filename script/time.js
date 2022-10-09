@@ -1,4 +1,7 @@
 let day = document.querySelector(".day");
+let day1 = document.querySelector(".day1");
+let day2 = document.querySelector(".day2");
+let day3 = document.querySelector(".day3");
 let mount = document.querySelector(".mount");
 let data = document.querySelector(".data");
 let year = document.querySelector(".year");
@@ -19,8 +22,10 @@ function NextClock() {
     minute = now.getMinutes();
     second = now.getSeconds();
 
-
     day.textContent = days[now.getDay()] + `, `;
+    day1.textContent = days[now.getDay()+1];
+    day2.textContent = days[now.getDay()+2];
+    day3.textContent = days[now.getDay()+3];
     mount.textContent = mounts[now.getMonth()] + `, `;
     data.textContent = dayNumber;
     year.textContent = years + ` year`;
