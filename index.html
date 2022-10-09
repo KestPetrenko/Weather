@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link href="style/animate.css" rel="stylesheet">
     <title>Weather</title>
 </head>
 
 <body>
     <video autoplay muted loop id="myVideo">
-        <source type="video/mp4" class="videoWeather">
+        <source type="video/mp4" class="videoWeather" src = video/clear.mp4>
     </video>
 
     <main class="container">
-
         <div class="head">
             <div class="header_time">
                 <div class="city_coun">
@@ -33,13 +33,11 @@
                     <p class="mount"></p>
                     <p class="year"></p>
                 </div>
-
                 <div class="time">
                     <p class="hr"></p>
                     <p class="min"></p>
                     <p class="sec"></p>
                 </div>
-
             </div>
             <div class="icon">
                 <img alt="rain" class="imgWeather">
@@ -55,28 +53,27 @@
                 <div id="pressure"></div>
                 <div id="humidity"></div>
                 <div id="visibility"></div>
-                <!-- <div id="situation"></div> -->
             </div>
         </div>
         <div class="weatherDays">
             <div class="nextDay">
                 <p class="day1"></p>
                 <div class="icon1">
-                    <img alt="rain" class="imgWeather1">
+                    <img alt="rain" class="imgWeather1 about__animate about__animate_1">
                 </div>
                 <div id="temp1"></div>
             </div>
             <div class="nextDay2">
                 <p class="day2"></p>
                 <div class="icon2">
-                    <img alt="rain" class="imgWeather2">
+                    <img alt="rain" class="imgWeather2 about__animate about__animate_2">
                 </div>
                 <div id="temp2"></div>
             </div>
             <div class="nextDay3">
                 <p class="day3"></p>
                 <div class="icon3">
-                    <img alt="rain" class="imgWeather3">
+                    <img alt="rain" class="imgWeather3 about__animate about__animate_3">
                 </div>
                 <div id="temp3"></div>
             </div>
