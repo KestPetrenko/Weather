@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+
+.animate__shakeX {
+    -webkit-animation-name: shakeX;
+    animation-name: shakeX
+}
+
+@-webkit-keyframes shakeX {
+    0%,
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-3px, 0, 0);
+        transform: translate3d(-3px, 0, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0)
+    }
+}
+
+@keyframes shakeX {
+    0%,
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(3px, 0, 0);
+        transform: translate3d(3px, 0, 0)
+    }
+}
+
+.animate__shakeX {
+    -webkit-animation-name: shakeX;
+    animation-name: shakeX
+}
