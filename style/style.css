@@ -211,9 +211,10 @@ input {
 }
 
 @media(max-width:768px) {
-     .container {
-        height: 270px;
-    }
+    .container {
+       height: 270px;
+   }
+}
 
 .weatherDays {
     height: 40%;
