@@ -208,10 +208,12 @@ input {
     #temp1, #temp2, #temp3{
         font-size: 4vw;
     }
-    .container {
+}
+
+@media(max-width:768px) {
+     .container {
         height: 270px;
     }
-}
 
 .weatherDays {
     height: 40%;
