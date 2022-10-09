@@ -208,6 +208,9 @@ input {
     #temp1, #temp2, #temp3{
         font-size: 4vw;
     }
+    .container {
+        height: 270px;
+    }
 }
 
 .weatherDays {
